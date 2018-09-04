@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - "packages-data:/app/node_modules"
+      - ".:/app"
+    depends_on:
+      - "postgres"
+
+  postgres:
+    image: postgres:10.3-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      # used in ormconfig.json
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dummy_password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  packages-data:
+  postgres-data:

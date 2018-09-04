@@ -1,0 +1,28 @@
+{
+  "name": "easy-puppeteer-crawling-boilerplate",
+  "version": "0.1.0",
+  "description": "Simple crawling boilerplate; TypeScript + Puppeteer + TypeORM(Postgres) + Docker",
+  "repository": "https://github.com/tsugitta/easy-puppeteer-crawling-boilerplate",
+  "author": "tsugitta",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "pg": "^7.4.3",
+    "puppeteer": "^1.7.0",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "@types/puppeteer": "^1.6.1",
+    "prettier": "^1.14.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^1.3.0",
+    "typescript": "^3.0.3"
+  }
+}
