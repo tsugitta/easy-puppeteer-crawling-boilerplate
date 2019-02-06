@@ -22,7 +22,7 @@ export const crawl = async () => {
 
   await page.emulate(emulateOptions);
 
-  // await page.goTo(anywhere)
+  // await page.goto(anywhere)
   // ..
 
   browser.close();

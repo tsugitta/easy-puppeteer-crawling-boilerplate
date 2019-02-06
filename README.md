@@ -7,7 +7,7 @@ The environment you can implement a simple crawling application right now with P
 1. Install dependencies (TypeScript related packages are required also in local for coding)
 
 ```
-$ yarn
+$ npm i
 ```
 
 2. Write your awesome crawling codes in `src/crawl.ts`

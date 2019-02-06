@@ -45,8 +45,8 @@ RUN apt-get update \
 WORKDIR /app
 
 COPY package.json ./
-COPY yarn.lock ./
+COPY package-lock.json ./
 
-RUN yarn
+RUN npm install
 
-CMD ["yarn", "start"]
+CMD ["npm", "run", "start"]
